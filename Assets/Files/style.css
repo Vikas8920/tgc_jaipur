@@ -241,3 +241,18 @@ nav .nav-menu .menu:hover .dropdown{
     margin-left: 90px;
     margin-top: 10px;
 }
+
+/* Hero Below Section */
+.hero-below{
+    background-color: #f1f1f1;
+    padding: 20px 160px;
+}
+.hero-below h1{
+    text-align: center;
+    font-size: 24px;
+}
+.hero-below p{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
