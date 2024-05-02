@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: "IBM Plex Sans", sans-serif;
+}
+.container{
+    margin: auto;
+}
+
+/* Top Header */
+.main-header{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.header{
+    width: 50%;
+    background-color: #333333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding-right: 80px;
+}
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: white;
+    clip-path: polygon(0 0, 0 0, 100% 100%, 0 100%);
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 0 6px 3px 6px;
+}
+.header a .social{
+    font-size: 13px;
+}
+.header a:nth-child(1){
+    padding: 0 4px 3px 4px;
+}
+.header a:nth-child(6){
+    padding: 0 7px 3px 7px;
+}
+
+/* Bottom Header */
+.header2{
+    width: 100%;
+}
+.header2 .header2-row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 50px;
+}
+.header2 .header2-row .header2-col{
+    width: 25%;
+}
+.header2 .header2-row .header2-col .call .call-row{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header2 .header2-row .header2-col .call .call-row .call-col i{
+    border: 2px solid #333333;
+    border-radius: 50%;
+    padding: 7px;
+}
+.header2 .header2-row .header2-col:nth-child(4) .call .call-row .call-col i{
+    padding: 7px 10px;
+}
+.header2 .header2-row .header2-col:nth-child(1){
+    margin-right: 50px;
+}
+.header2 .header2-row .header2-col:nth-child(4) .call .call-row .call-col:nth-child(2){
+    padding-top: 40px;
+}
+
+/* Navbar */
+nav{
+    background-color: #eaeaea;
+    padding: 30px 0 10px 0;
+    margin-top: 30px;
+}
+nav .nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+nav .nav-menu .menu{
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+nav .nav-menu .menu a{
+    text-decoration: none;
+    color: #333333;
+}
+nav .nav-menu .menu a:hover{
+    color: #a0a0a0;
+    transition: 500ms;
+}
+nav i{
+    float: right;
+    display: none!important;
+}
+.dropdown{
+    width: 230px;
+    min-height: 100px;
+    background-color: white;
+    padding: 20px 0;
+    position: absolute;
+    left: 220px;
+    margin-top: 10px;
+    display: none;
+    z-index: +1;
+}
+nav .nav-menu .menu:hover .dropdown{
+    display: block;
+    transition: 500ms;
+}
+.dropdown ul li{
+    padding: 12px;
+    list-style: none; 
+    margin-left: -20px;
+    font-size: 14px;
+}
+.dropdown ul li:hover{
+    color: #a0a0a0;
+}
+.dropdown2{
+    width: 750px;
+    left: 350px;
+    padding: 20px;
+}
+.courses-row{
+    display: flex;
+    gap: 30px;
+}
+.courses-row .courses-col{
+    width: 30%;
+}
+.courses-row .courses-col h3{
+    padding-bottom: 7px;
+    border-bottom: 1px solid black;
+}
+.courses-row .courses-col p{
+    border-bottom: 1px dotted #333333;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    font-size: 14px;
+}
+.courses-row .courses-col .pad{
+    padding-top: 20px;
+}
+.dropdown3{
+    left: 490px;
+}
+
+/* Hero Section */
+.hero{
+    margin-top: 10px;
+}
+.hero-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-row .hero-col:nth-child(1){
+    width: 70%;
+}
+.hero-row .hero-col{
+    position: relative;
+}
+.hero-row .hero-col img{
+    width: 100%;
+    object-fit: cover;
+}
+.hero-row .hero-col h3{
+    position: absolute;
+    top: 130px;
+    left: 110px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 25px;
+}
+.hero-row .hero-col a{
+    width: 250px;
+    height: 40px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    top: 200px;
+    left: 330px;
+}
+.hero-row .hero-col form{
+    width: 330px;
+    position: absolute;
+    top: 110px;
+    left: 65px;
+}
+.hero-row .hero-col form label{
+    color: #333333;
+}
+.hero-row .hero-col form input{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+.hero-row .hero-col form button{
+    width: 140px;
+    height: 30px;
+    border: none;
+    background-color: #3a9fd6;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 90px;
+    margin-top: 10px;
+}
