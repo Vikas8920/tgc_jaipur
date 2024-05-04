@@ -256,3 +256,151 @@ nav .nav-menu .menu:hover .dropdown{
     font-size: 16px;
     margin-top: 10px;
 }
+
+/* Comprehensive Courses */
+/* Professional Courses */
+/* Short Term Courses */
+.comprehensive{
+    margin-top: 30px;
+}
+.comprehensive h1{
+    text-align: center;
+}
+.slider{
+    width: 1300px;
+    margin: auto;
+    padding: 20px 50px;
+}
+.content{
+    padding: 15px;
+    color: black;
+}
+.slick-prev,
+.slick-next {
+  background: rgba(0, 0, 0, 0.452);
+  color: white;
+  font-size: 35px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none!important;
+}
+.slider:hover .slick-next{
+    display: block!important;
+    transition: 500ms;
+}
+.slider:hover .slick-prev{
+    display: block!important;
+    transition: 500ms;
+}
+
+.slick-prev {
+    position: absolute;
+    left: 60px;
+    top: 130px;
+    z-index: +1;
+    padding-right: 15px;
+    padding-left: 10px;
+}
+.slick-next {
+   position: absolute;
+   right: 80px;
+   top: 130px;
+   padding-left: 15px;
+   padding-right: 10px;
+}
+.slider div a{
+    text-decoration: none;
+}
+.card img{
+border: 1px solid rgb(221, 220, 220);
+padding: 5px;
+border-radius: 4px;
+margin-bottom: 10px;
+}
+.card p{
+    color: #333333;
+    margin-right: 20px;
+}
+/* .slick-dots{
+    text-align: center;
+    margin-top: 10px;
+}
+.slick-dots li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.slick-dots li button{
+    font-size: 0;
+    line-height: 12px;
+    border: none;
+    background: #ccc;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li.slick-active button{
+    background-color: black;
+} */
+
+/* Form Section */
+.form{
+    background: #ffc001;
+    margin: auto;
+    padding: 50px 0;
+}
+.form .form-container h1{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.form .form-container form .form-row{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+.form .form-container form{
+    width: 1000px;
+    margin: auto;
+}
+.form .form-container form button{
+    margin-left: 400px;
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 35px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #61B329;
+    margin-top: 30px;
+}
+.form .form-container form .form-row .form-col .input-group label{
+    margin-right: 50px;
+}
+.form .form-container form .form-row .form-col .input-group input{
+    width: 300px;
+    height: 28px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(199, 199, 199);
+}
+.form .form-container form .form-row .form-col .input-group:nth-child(1) input{
+    margin-left: 3px;
+}
+.form .form-container form .form-row .form-col .input-group:nth-child(2) input{
+    margin-left: 6px;
+}
+.form .form-container form .form-row .form-col:nth-child(2) .input-group:nth-child(1) input{
+    margin-left: 15px;
+}
+.form .form-container form .form-row .form-col:nth-child(2) .input-group:nth-child(2) input{
+    margin-left: 37px;
+}
