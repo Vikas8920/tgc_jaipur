@@ -478,7 +478,7 @@ margin-bottom: 10px;
 
 /* Footer Section */
 footer{
-    background-color: #1a1a1a;
+    background-color: #f1f1f1;
     padding-top: 70px;
     padding-bottom: 30px;
 }
@@ -493,18 +493,18 @@ footer .footer-row{
 }
 footer .footer-row .footer-col h3{
     padding-bottom: 10px;
-    color: white;
+    color: black;
 }
 footer .footer-row .footer-col p{
     padding-bottom: 10px;
-    color: gray;
+    color: black;
 }
 footer .footer-row .footer-col p a{
     text-decoration: none;
-    color: gray;
+    color: black;
 }
 footer .footer-row .footer-col p a:hover{
-    color: white;
+    color: gray;
     transition: 500ms;
 }
 footer .footer-row .footer-col .social{
