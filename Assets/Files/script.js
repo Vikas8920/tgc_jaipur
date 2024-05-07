@@ -75,4 +75,13 @@ $(document).ready(function(){
       }
     ]
   });
+
+  // Navbar
+  $('.menu-toggle').click(function() {
+    $('.nav-menu').toggleClass('open');
+});
+
+$('.nav-menu a').click(function() {
+    $('.nav-menu').removeClass('open'); /* Hide the menu by removing the 'open' class */
+});
 });
