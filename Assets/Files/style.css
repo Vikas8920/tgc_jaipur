@@ -143,8 +143,10 @@ nav .nav-menu .menu:hover .dropdown{
 }
 .dropdown2{
     width: 750px;
+    height: 440px;
     left: 350px;
     padding: 20px;
+    overflow-y: scroll;
 }
 .courses-row{
     display: flex;
@@ -260,6 +262,7 @@ nav .nav-menu .menu:hover .dropdown{
 /* Comprehensive Courses */
 /* Professional Courses */
 /* Short Term Courses */
+/* Blogs Section */
 .comprehensive{
     margin-top: 30px;
 }
@@ -311,14 +314,22 @@ nav .nav-menu .menu:hover .dropdown{
     text-decoration: none;
 }
 .card img{
-border: 1px solid rgb(221, 220, 220);
-padding: 5px;
-border-radius: 4px;
-margin-bottom: 10px;
+    width: 230px;
+    height: 170px;
+    border: 1px solid rgb(221, 220, 220);
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 .card p{
     color: #333333;
-    margin-right: 20px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.card p:nth-child(2) a{
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
 }
 
 /* Form Section */
@@ -454,6 +465,74 @@ margin-bottom: 10px;
     background-color: blue;
 }
 
+/* Photo Gallery */
+/* Students Work Section */
+.community h1{
+    color: black;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 40px;
+}
+.community .community-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.community .community-row .community-col img{
+    width: 360px;
+    height: 270px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.community p{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 15px;
+}
+.community p a{
+    color: black;
+}
+
+/* About Us Section */
+.bonus h1{
+    color: black;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 40px;
+}
+.bonus .bonus-row{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: #f1f1f1;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 4px;
+    width: 700px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px ;
+}
+.bonus .bonus-row .bonus-col{
+    width: 750px;
+}
+.bonus .bonus-row .bonus-col:nth-child(1){
+    width: 350px;
+}
+.bonus .bonus-row .bonus-col img{
+    width: 100%;
+    height: 255px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.bonus .bonus-row .bonus-col h2{
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    text-align: justify;
+}
+
 /* Our Placement Section */
 .placement{
    background-color: #f1f1f1;
@@ -476,11 +555,92 @@ margin-bottom: 10px;
     width: 100%;
 }
 
+/* FAQ'S section */
+.faq h1{
+    color: black;
+    font-size: 2.2rem;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.faq .faq-accordion{
+    width: 830px;
+    margin: auto;
+}
+.faq .faq-accordion-section{
+    border: 1px solid rgb(199, 199, 199);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.faq .faq-accordion-header{
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px 20px;
+}
+.faq .faq-accordion-header h2{
+    color: black;
+    font-size: 1.3rem;
+}
+.faq .faq-accordion-header h2 i{
+    float: right;
+}
+.faq .faq-accordion-content{
+    padding: 20px;
+    display: none;
+}
+.faq .faq-accordion-content p{
+    color: black;
+}
+.faq button{
+    width: 300px;
+    background-color: f1f1f1;
+    padding: 15px 0;
+    font-weight: bold;   
+    font-size: 18px; 
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: black;
+    transform: translateX(250px);
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.faq h3{
+    color: black;
+    text-align: center;
+    font-size: 2.0rem;
+    margin-top: 30px;
+}
+
+/* Map Section */
+.map{
+    margin-top: 40px;
+}
+.map .map-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.map .map-row .map-col{
+    width: 100%;
+}
+.map .map-row .map-col iframe{
+    width: 100%;
+    height: 400px;
+}
+
 /* Footer Section */
 footer{
     background-color: #f1f1f1;
     padding-top: 70px;
     padding-bottom: 30px;
+    margin-top: 20px;
 }
 footer .footer-row{
     display: flex;
@@ -630,6 +790,7 @@ footer .footer-row:nth-child(2) .footer-col:nth-child(4){
     /* Comprehensive Courses */
     /* Professional Courses */
     /* Short Term Courses */
+    /* Blogs Section */
     .slider {
         width: 750px;
         padding: 10px 20px;
@@ -674,10 +835,48 @@ footer .footer-row:nth-child(2) .footer-col:nth-child(4){
     .testimonial-card img {
         margin-left: 20px;
     }
+
+    /* Photo Gallery */
+    /* Students Work Section */
+    .community h1 {
+        font-size: 35px;
+        margin-top: 40px;
+    }
+    .community .community-row .community-col img {
+        width: 350px;
+    } 
+
+    /* About Us Section */
+    .bonus h1 {
+        font-size: 35px;
+        margin-top: 40px;
+    }
+    .bonus .bonus-row{
+        width: 700px;
+    }
+    .bonus .bonus-row .bonus-col:nth-child(1){
+        width: 320px;
+    }
+
     /* Our Placement Section */
     .placement .placement-images{
         width: 100%;
     }
+
+    /* FAQ's Section */
+    .faq h1 {
+        font-size: 35px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .faq .faq-accordion {
+        width: 750px;
+        padding: 10px;
+    }
+    .faq button {
+        transform: translateX(180px);
+    }
+
     /* Footer Section */
     footer .footer-row {
         gap: 50px;
@@ -772,7 +971,7 @@ footer .footer-row:nth-child(2) .footer-col:nth-child(4){
     }
     .dropdown2{
         width: 220px;
-        height: 300px;
+        height: 320px;
         top: 0;
         overflow-x: scroll;
         overflow-y: scroll;
@@ -786,6 +985,7 @@ footer .footer-row:nth-child(2) .footer-col:nth-child(4){
     }
     .dropdown3{
         top: 145px;
+        padding: 0;
     }
 
     /* Hero Section */
@@ -804,6 +1004,7 @@ footer .footer-row:nth-child(2) .footer-col:nth-child(4){
     }
     .hero-row .hero-col a {
         top: 170px;
+        left: 100px;
     } 
     .hero-row .hero-col:nth-child(2) img{
         width: 100%!important;
@@ -834,6 +1035,7 @@ footer .footer-row:nth-child(2) .footer-col:nth-child(4){
     /* Comprehensive Courses */
     /* Professional Courses */
     /* Short Term Courses */
+    /* Blogs Section */
     .slider {
         width: 300px;
         padding-left: 35px;
@@ -850,8 +1052,8 @@ footer .footer-row:nth-child(2) .footer-col:nth-child(4){
         padding-bottom: 10px;
     }
     .form .form-container form{
-    margin: 0;
-    padding-left: 30px;
+        margin: 0;
+        padding-left: 30px;
     }
     .form .form-container form .form-row {
         width: 300px;
@@ -870,6 +1072,21 @@ footer .footer-row:nth-child(2) .footer-col:nth-child(4){
         margin-left: 0;
         margin-left: 80px;
         margin-top: 20px;
+    }
+
+    /* Photo Gallery */
+    /* Students Work Section */
+    .community h1{
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .community .community-row{
+       flex-direction: column;
+       gap: 20px;
+    }
+    .community .community-row .community-col img{
+        width: 300px;
+        border-radius: 10px;
     }
 
     /* Testimonials Section */
@@ -893,9 +1110,55 @@ footer .footer-row:nth-child(2) .footer-col:nth-child(4){
         display: none!important;
     }
 
+    /* About Us Section */
+    .bonus h1 {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .bonus .bonus-row {
+        width: 300px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .bonus .bonus-row .bonus-col {
+        padding: 0 22px;
+        width: 300px;
+    }
+
     /* Our Placement Section */
     .placement h1 {
         font-size: 25px;
+    }
+
+    /* FAQ's Section */
+    .faq h1 {
+        font-size: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+    .faq .faq-accordion{
+        width: 330px;
+    }
+    .faq button {
+        padding: 15px 0px;
+        transform: translate(0);
+    }
+    .faq .faq-accordion-header h2 {
+        color: var(--text);
+        font-size: 1.3rem;
+    }
+
+    /* Map Section */
+    .map .map-row {
+        display: flex;
+        flex-direction: column;
+    }
+    .map .map-row .map-col {
+        width: 100%;
+    }
+    .map .map-row .map-col iframe {
+        height: 250px;
     }
 
     /* Footer Section */
