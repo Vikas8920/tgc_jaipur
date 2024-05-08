@@ -11,6 +11,20 @@ body{
     margin: auto;
 }
 
+/* Social Icons */
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 250px;
+    right: 0;
+    display: none;
+}
+.social-icons .phone{
+    border-radius: 4px;
+}
+
 /* Top Header */
 .main-header{
     width: 100%;
@@ -904,6 +918,15 @@ footer .footer-row:nth-child(2) .footer-col:nth-child(4){
 
 /* Mobile Responsive */
 @media screen and (max-width:599px) {
+
+    /* Social Icons */
+    .social-icons{
+        display: flex;
+        z-index: +1;
+    }
+    .social-icons img{
+        width: 35px;
+    }
 
     /* Top Header */
     .main-header {
