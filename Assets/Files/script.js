@@ -213,6 +213,7 @@ $(document).ready(function(){
         $("#popupForm").fadeOut();
     });
 
+    // Form 3
     $("#form3").submit(function(e){
       e.preventDefault();
       let name = $("#name3").val();
@@ -259,4 +260,36 @@ $(document).ready(function(){
           let phoneRegex = /^\d{10}$/;
           return phoneRegex.test(phone);
       }
+
+      // Form 4
+      // Form 3
+    $("#form4").submit(function(e){
+      e.preventDefault();
+      let name = $("#name4").val();
+      let email = $("#email4").val();
+      $("#nameError4").text("");
+      $("#emailError4").text("");
+  
+      if(name.trim() === ""){
+          $("#nameError4").text("Name is required.");
+          return;
+      }
+  
+      if(email.trim() === ""){
+          $("#emailError4").text("Email is required.");
+          return;
+      }
+  
+      if(!isValidEmail(email)){
+          $("#emailError4").text("Invalid email address.");
+          return;
+      }
+  
+      $("#form4").unbind('submit').submit();
+    });
+  
+      function isValidEmail(email){
+          let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+          return emailRegex.test(email);
+    }
 });
