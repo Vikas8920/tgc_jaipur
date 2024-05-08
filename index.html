@@ -13,7 +13,7 @@
 
         <!-- Social Icons -->   
         <div class="social-icons">
-            <a href="https://wa.me/7568846885?text= Hello, I want to know more about the Courses..." target="_blank"><img src="Assets/Images/social.png" alt="social"></a>
+            <a href="https://wa.me/+91 7568846885?text= Hello, I want to know more about the Courses..." target="_blank"><img src="Assets/Images/social.png" alt="social"></a>
             <a href="tel:7568846885"><img class="phone" src="Assets/Images/square.png" alt="square"></a>
         </div>
 
@@ -196,14 +196,18 @@
                 </div>
                 <div class="hero-col">
                     <img src="Assets/Images/form.jpg" alt="form" width="350" height="410">
-                    <form action="" method="post">
-                        <label for="name">Your Name (required)</label><br>
-                        <input type="text" id="name"><br>
-                        <label for="email">Your Email (required)</label><br>
-                        <input type="email" id="email"><br>
-                        <label for="phone">Phone (required)</label><br>
-                        <input type="tel" id="phone"><br>
-                        <button type="submit">Send</button>
+                    <form id="form1" action="Assets/Files/submit.php" method="post">
+                        <input type="hidden" name="formName" value="Get Fee Details - Jaipur">
+                        <label for="name1">Name</label><br>
+                        <input type="text" id="name1" name="name" autocomplete="off"><br>
+                        <div class="error" id="nameError1"></div>
+                        <label for="email1">Email</label><br>
+                        <input type="email" id="email1" name="email" autocomplete="off"><br>
+                        <div class="error" id="emailError1"></div>
+                        <label for="phone1">Phone</label><br>
+                        <input type="tel" id="phone1" name="phone" autocomplete="off"><br>
+                        <div class="error" id="phoneError1"></div>
+                        <button type="submit" value="Submit">Send</button>
                     </form>
                 </div>
             </div>
@@ -483,32 +487,39 @@
         <section class="form">
             <div class="form-container">
                 <h1>I want to start with a Free Demo</h1>
-                <form action="" method="post">
+                <form id="form2" action="Assets/Files/submit.php" method="post">
+                    <input type="hidden" name="formName" value="Free Demo - Jaipur">
                     <div class="form-row">
                         <div class="form-col">
                             <div class="input-group">
-                                <label for="name">Name</label><input type="text" id="name">
+                                <label for="name2">Name</label><input type="text" id="name2" name="name" autocomplete="off">
+                                <div class="error error2" id="nameError2"></div>
                             </div>
                             <div class="input-group">
-                                <label for="email">Email</label><input type="email" id="email">
+                                <label for="email2">Email</label><input type="email" id="email2" name="email" autocomplete="off">
+                                <div class="error error2" id="emailError2"></div>
                             </div>
                             <div class="input-group">
-                                <label for="phone">Phone</label><input type="tel" id="phone">
+                                <label for="phone2">Phone</label><input type="tel" id="phone2"  name="phone" autocomplete="off">
+                                <div class="error error2" id="phoneError2"></div>
                             </div>
                         </div>
                         <div class="form-col">
                             <div class="input-group">
-                                <label for="course">Course</label><input type="text" id="course">
+                                <label for="course2">Course</label><input type="text" id="course2" name="course" autocomplete="off">
+                                <div class="error error3" id="courseError2"></div>
                             </div>
                             <div class="input-group">
-                                <label for="city">City</label><input type="text" id="city">
+                                <label for="city2">City</label><input type="text" id="city2" name="city" autocomplete="off">
+                                <div class="error error3" id="cityError2"></div>
                             </div>
                             <div class="input-group">
-                                <label for="message">Message</label><input type="text" id="message">
+                                <label for="message2">Message</label><input type="text" id="message2" name="messages" autocomplete="off">
+                                <div class="error error3" id="messageError2"></div>
                             </div>
                         </div>
                     </div>
-                    <button type="submit">Send</button>
+                    <button type="submit" value="Submit">Send</button>
                 </form>
             </div>
         </section>
@@ -1072,7 +1083,28 @@
                 </div>
 
                 <h3>Enroll Now! Only a Limited Seats Available</h3>
-                <button type="button">Enroll Now</button>
+                <!-- Popup 1 -->
+                <button type="button" id="openPopup">Enroll Now</button>
+                <!-- Overlay -->
+                <div id="overlay" class="overlay"></div>
+                <!-- Popup -->
+                <div id="popupForm" class="popup">
+                    <span class="close">&times;</span>
+                    <!-- form 3 -->
+                    <form id="form3" action="Assets/Files/submit.php" method="post">
+                        <h2>Enroll Now</h2>
+                        <div class="apply-inputs">
+                            <input type="hidden" name="formName" value="Enroll Now - Jaipur">
+                            <input type="text" placeholder="Name" id="name3" name="name" autocomplete="off">
+                            <div class="error" id="nameError3"></div>
+                            <input type="email" placeholder="Email" id="email3" name="email" autocomplete="off">
+                            <div class="error" id="emailError3"></div>
+                            <input type="tel" placeholder="Phone" id="phone3" name="phone" autocomplete="off">
+                            <div class="error" id="phoneError3"></div>
+                        </div>
+                        <button class="pop" type="submit" value="Submit">Submit</button>
+                    </form>
+                </div>
             </div>
         </section>
 
@@ -1094,7 +1126,7 @@
                <div class="footer-col">
                     <h3>Jaipur Center</h3>
                     <p>D-32, 2nd floor, Near Gaurav Tower, Malviya Nagar, Jaipur- 302017, Rajasthan</p>
-                    <p>Toll Free No. : <a href="tel: 18001020514">18001020514</a></p>
+                    <p>Phone: <a href="tel: 7568846885">7568846885</a></p>
                     <p>Email: <a href="mailto:info@tgcjaipur.com">info@tgcjaipur.com</a></p>
                     <div class="social">
                         <a href=""><img src="Assets/Images/instagram.png" alt="instagram"></a>
@@ -1106,7 +1138,7 @@
                         <p><b>TGC South Extension Delhi:</b> G-5, NDSE-1, New Delhi-110049, <a href="tel:9582786407">9582786407</a></p>
                         <p><b>TGC Preet Vihar, Delhi:</b> C-57, Vikas Marg, Preet Vihar, Delhi-110092, <a href="tel:9582786406">9582786406</a></p>
                         <p><b>TGC Pitampura:</b> 373, 1st floor, Kohat Enclave, Pitampura, Delhi-110034, <a href="tel:9582786407">9582786407</a></p>
-                        <p><b>TGC Faridabad:</b> SCF 43, 2nd Floor, Part 2 huda market, Sector 19, faridabad, <a href="tel:9643642030">9643642030</a></p>
+                        <p><b>TGC Faridabad:</b> SCF 43, 2nd Floor, Part 2 huda market, Sector 19, Faridabad, <a href="tel:9643642030">9643642030</a></p>
                     </div>
                </div>
             </div>
