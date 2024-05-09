@@ -1124,10 +1124,14 @@ footer .footer-row:nth-child(2) .footer-col:nth-child(4){
 
     /* Top Header */
     .main-header {
-        justify-content: start;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
     .header{
-        width: 100%;
+        padding-left: 100px;
+        justify-content: center;
+        align-items: center;
     }
     .header::before {
         width: 0;
