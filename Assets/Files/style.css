@@ -185,6 +185,11 @@ nav .nav-menu .menu:hover .dropdown{
 .dropdown3{
     left: 490px;
 }
+nav .nav-menu .menu.active a{
+    font-weight: bold;
+    color: #3686ff;
+}
+
 
 /* Hero Section */
 .hero{
@@ -554,7 +559,7 @@ nav .nav-menu .menu:hover .dropdown{
 .placement{
    background-color: #f1f1f1;
    margin-top: 30px;
-   padding-bottom: 20px;
+   text-align: center;
 }
 .placement h1{
     text-align: center;
@@ -563,13 +568,44 @@ nav .nav-menu .menu:hover .dropdown{
     padding-bottom: 20px;
 }
 .placement .placement-images{
-    width: 1340px;
     background-color: rgb(199, 199, 199);
-    padding-left: 5px;
-    margin: auto;
+    padding: 10px 0;
 }
-.placement .placement-images img{
-    width: 100%;
+.placement .placement-images .placement-col img{
+    width: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 0 10px;
+    object-fit: cover;
+}
+.placement .placement-images .placement-col:nth-child(1) img:nth-child(2){
+    padding: 8px 18px;
+}
+.placement .placement-images .placement-col:nth-child(1) img:nth-child(5){
+    padding: 10px 20px;
+}
+.placement .placement-images .placement-col:nth-child(1) img:nth-child(6){
+    padding: 10px 20px;
+}
+.placement .placement-images .placement-col:nth-child(2) img:nth-child(3){
+    padding: 5px 15px;
+}
+.placement .placement-images .placement-col:nth-child(2) img:nth-child(4){
+    padding: 5px 15px;
+}
+.placement .placement-images .placement-col:nth-child(2) img:nth-child(5){
+    padding: 5px 15px;
+}
+.placement .placement-images .placement-col:nth-child(2) img:nth-child(6){
+    padding: 10px 20px;
+}
+.placement .placement-images .placement-col:nth-child(3) img:nth-child(2){
+    padding: 5px 15px;
+}
+.placement .placement-images .placement-col:nth-child(3) img:nth-child(3){
+    padding: 10px 20px;
 }
 
 /* FAQ'S section */
@@ -791,8 +827,7 @@ footer .footer-row:nth-child(2) .footer-col:nth-child(4){
     position: fixed;
     bottom: 0;
     background-color: green;
-    padding: 10px 0;
-    padding-top: 20px;
+    padding-top: 12px;
 }
 .bottom-bar .bottom-row{
     display: flex;
@@ -812,7 +847,7 @@ footer .footer-row:nth-child(2) .footer-col:nth-child(4){
     text-decoration: none;
 }
 .bottom-bar .bottom-row .bottom-col form input{
-    height: 35px;
+    height: 30px;
     padding-left: 10px;
     margin-right: 10px;
     border: none;
@@ -1310,6 +1345,9 @@ footer .footer-row:nth-child(2) .footer-col:nth-child(4){
     /* Our Placement Section */
     .placement h1 {
         font-size: 25px;
+    }
+    .placement .placement-images .placement-col{
+        padding-left: 10px;
     }
 
     /* FAQ's Section */
