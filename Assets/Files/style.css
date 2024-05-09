@@ -1454,4 +1454,12 @@ footer .footer-row:nth-child(2) .footer-col:nth-child(4){
         bottom: 0;
         padding: 5px 15px;
     }
+
+    /* Popup */
+    .popup {
+        width: 300px;
+    }
+    #popupForm form button{
+        padding: 10px;
+    }
 }
