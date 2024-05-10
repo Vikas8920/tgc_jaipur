@@ -1076,10 +1076,10 @@ footer .footer-row:nth-child(2) .footer-col:nth-child(4){
     /* Footer Section */
     footer .footer-row {
         gap: 50px;
-        padding: 0 20px;
+        padding: 20px;
     }
     footer .footer-row:nth-child(2) {
-       padding: 0 40px;
+       padding: 40px;
        gap: 20px;
     }
     footer .footer-row:nth-child(2) .footer-col{
