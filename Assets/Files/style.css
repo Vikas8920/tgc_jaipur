@@ -185,10 +185,10 @@ nav .nav-menu .menu:hover .dropdown{
 .dropdown3{
     left: 490px;
 }
-nav .nav-menu .menu.active a{
+/* nav .nav-menu .menu.active a{
     font-weight: bold;
     color: #3686ff;
-}
+} */
 
 
 /* Hero Section */
