@@ -1,4 +1,12 @@
 $(document).ready(function(){
+ 
+  //Menus
+  $('nav .nav-menu .menu').on('click', function(){
+    $('nav .nav-menu .menu').removeClass('active');
+    $(this).addClass('active');
+  });
+
+
   $('.slider').slick({
     infinite: true,
     slidesToShow: 5,
