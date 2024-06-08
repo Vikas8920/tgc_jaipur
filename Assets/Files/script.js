@@ -90,9 +90,9 @@ $(document).ready(function(){
     $('.nav-menu').toggleClass('open');
   });
 
-  $('.nav-menu a').click(function() {
-    $('.nav-menu').removeClass('open'); /* Hide the menu by removing the 'open' class */
-  });
+//   $('.nav-menu a').click(function() {
+//     $('.nav-menu').removeClass('open'); /* Hide the menu by removing the 'open' class */
+//   });
 
   //Faq Accordion
   $('.faq-accordion-header').click(function(){
